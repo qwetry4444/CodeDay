@@ -4,7 +4,7 @@ body{
 .header__menu{
     display: flex;
     justify-content: space-between;
-    margin: 0px 0px 0px 255px;
+    margin: 0px 0px 0px 170px;
 }
 a{
     display: flex;
@@ -14,7 +14,7 @@ ul{
 }
 
 .menu__item:not(:last-child){
-    margin: 0px 260px 0px 0px;
+    margin: 0px 220px 0px 0px;
 }
 
 .menu__link{
@@ -56,75 +56,12 @@ ul{
 
 }
 
-.Compiler{
-    position: absolute;
-
-    
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 46px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-.Tasks{
-    position: absolute;
-
-    
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 46px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
-    
-}
-.Documentation{
-    position: absolute;
-
-    
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 46px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
-    
-}
-
-.Registration{
-    position: absolute;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 46px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
 .offer-img{
     position: absolute;
     width: 590px;
     height: 835px;
-    left: 837px;
-    top: 160px;
+    left: 60%;
+    top: 20%;
 
     background: url(walkator-klMii3cR9iI-unsplash.jpg);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(-10px 4px 4px rgba(0, 0, 0, 0.25));
@@ -135,8 +72,8 @@ ul{
     position: absolute;
     width: 710px;
     height: 501px;
-    left: 73px;
-    top: 250px;
+    left: 15%;
+    top: 30%;
 
     font-family: 'Open Sans';
     font-style: normal;
@@ -150,27 +87,16 @@ ul{
     color: #000000;
 }
 
-.fieldButton{
+    
+
+.textButton{
     box-sizing: border-box;
 
     position: absolute;
     width: 253px;
     height: 102px;
-    left: 302px;
+    left: 25%;
     top: 759px;
-    
-    background: #000000;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 39px;
-}
-
-.textButton{
-    position: absolute;
-    width: 222px;
-    height: 68px;
-    left: 317px;
-    top: 776px;
     
     text-decoration: none;
     
@@ -182,31 +108,36 @@ ul{
     
     /* identical to box height */
     
-    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+
     
     color: #FFFFFF;
-    
-    border: 1px solid #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #000000;
+
+    box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 39px;
 }
 
 .secondPageFront{
     position: absolute;
     width: 577px;
     height: 537px;
-    left: 863px;
+    left: 50%;
     top: 1166px;
 
-    background: url(image.png);
+
+}
+
+.secondPageText{
+    margin: 0px 10px 0px 0px;
 }
 
 .secondPage1stTtextHead{
     position: absolute;
     width: 172px;
     height: 55px;
-    left: 73px;
+    left: 5%;
     top: 1166px;
     
     font-family: 'Bebas Neue';
@@ -223,7 +154,7 @@ ul{
     position: absolute;
     width: 569px;
     height: 100px;
-    left: 245px;
+    left: 14%;
     top: 1166px;
 
     font-family: 'Bebas Neue';
@@ -238,7 +169,7 @@ color: #000000;
     position: absolute;
     width: 106px;
     height: 55px;
-    left: 73px;
+    left: 5%;
     top: 1354px;
     
     font-family: 'Bebas Neue';
@@ -254,7 +185,7 @@ color: #000000;
     position: absolute;
     width: 656px;
     height: 50px;
-    left: 179px;
+    left: 11%;
     top: 1357px;
     
     font-family: 'Bebas Neue';
@@ -274,7 +205,7 @@ color: #000000;
     position: absolute;
     width: 249px;
     height: 55px;
-    left: 73px;
+    left: 5%;
     top: 1527px;
     
     font-family: 'Bebas Neue';
@@ -291,7 +222,7 @@ color: #000000;
     position: absolute;
     width: 533px;
     height: 110px;
-    left: 330px;
+    left: 18.7%;
     top: 1527px;
     
     font-family: 'Bebas Neue';
@@ -305,7 +236,7 @@ color: #000000;
 }
 .footer1{
     position: absolute;
-    width: 1440px;
+    width: 100% ;
     height: 141px;
     left: 0px;
     top: 1844px;
