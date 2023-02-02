@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,18 +15,31 @@
 </head>
 <body>
     <header class="FirstHeader">
-        <nav class="nav">
-            <li><a class="Compiler" 
-            href="https://replit.com/~">Compiler</a></li>
-            <li><a class="Tasks" 
-            href="http://www.itmathrepetitor.ru/prog/zadachi-na-vychisleniya/">Tasks</a></li>        
-            <li><a class="Documentation" 
-                href="https://learn.microsoft.com/ru-ru/cpp/c-language/?view=msvc-170">Documentation</a></li> 
-            <li><a class="Registration" 
-                href="https://learn.microsoft.com/ru-ru/cpp/c-language/?view=msvc-170">Registration</a></li> 
-        </nav>
-        <img class="1stLogo" src="img/logo 1.png" alt="logo">
+        <div class="header__container">
+            <img class="1stLogo" src="img/logo 1.png" alt="logo">
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" 
+                        href="https://replit.com/~">Compiler</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" 
+                        href="http://www.itmathrepetitor.ru/prog/zadachi-na-vychisleniya/">Tasks</a>
+                    </li>        
+                    <li class="menu__item">
+                        <a class="menu__link" 
+                        href="https://learn.microsoft.com/ru-ru/cpp/c-language/?view=msvc-170">Documentation</a>
+                    </li> 
+                    <li class="menu__item">
+                        <a class="menu__link" 
+                         href="https://learn.microsoft.com/ru-ru/cpp/c-language/?view=msvc-170">Registration</a>
+                    </li> 
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <div class="offer">
         <div class="offer-img">
             <img src="img/1stPageFront.png" alt="some code">
