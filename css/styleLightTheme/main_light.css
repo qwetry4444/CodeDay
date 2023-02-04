@@ -15,7 +15,7 @@ body{
     left: 0;
     top: 0;
     z-index: 1;
-    border-radius: 0px 0px 30px 0px;
+    border-radius: 0px 0px 30px 30px;
     background: #000000;   
     text-decoration: none;
     color: #FFFFFF;
@@ -39,7 +39,6 @@ body{
     height: 68px;
     left: 17px;
     top: 48px;
-
 
     text-decoration: none;
     font-family: 'Open Sans';
@@ -67,7 +66,7 @@ body{
 .header__Login{
     display: flex;
     justify-content: end;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 30px 0px 0px;
     flex: 0 0 100px;
     text-decoration: none;
 }
@@ -110,7 +109,7 @@ ul{
     flex-wrap: wrap;
 }
 
-@media (max-width: 1170px){
+@media (max-width: 1183px){
     .header{
         height: 18%;
     }
@@ -121,9 +120,8 @@ ul{
     }
 }
 
-
-
-
+/*===================================================================================================================================================================*/
+/*First page content*/
 
 .offer-img{
     position: absolute;
@@ -191,6 +189,48 @@ ul{
     color: #AEAEAE;
 }
 
+/*===================================================================================================================================================================*/
+/*Second page content*/
+
+.SecondePage__secondPageText{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 0px 300px;
+    flex: 1 1 auto;
+}
+
+.secondPageText{
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 55px;
+    
+    color: #000000;
+}
+
+
+
+.secondPageText__secondPage1stTtextHead{
+    margin: 0px 0px 0px 50px;
+    position: absolute;
+    width: 172px;
+    height: 55px;
+    left: 5%;
+    top: 1166px;
+    margin: 0px 120px 0px 0px;
+
+
+}
+.secondPageText__secondPage1stText{
+    position: absolute;
+    width: 569px;
+    height: 100px;
+    left: 14%;
+    top: 1166px;
+
+}
+
 .secondPageFront{
     position: absolute;
     width: 577px;
@@ -208,109 +248,43 @@ ul{
     flex: 1 1 auto;
 }
 
-.secondPage1stTtextHead{
-    position: absolute;
-    width: 172px;
-    height: 55px;
-    left: 5%;
-    top: 1166px;
-    margin: 0px 120px 0px 0px;
 
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 46px;
-    line-height: 55px;
-    
-    color: #000000;
-    
-}
-
-.secondPage1stText{
-    position: absolute;
-    width: 569px;
-    height: 100px;
-    left: 14%;
-    top: 1166px;
-
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 50px;
-
-color: #000000;
-}
-.secondePage2ndTextHead{
+.secondPageText__secondePage2ndTextHead{
     position: absolute;
     width: 106px;
     height: 55px;
     left: 5%;
     top: 1354px;
     
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 46px;
-    line-height: 55px;
-    
-    color: #000000;
 }
 
-.secondePage2ndText{
+.secondPageText__secondePage2ndText{
     position: absolute;
     width: 656px;
     height: 50px;
     left: 11%;
     top: 1357px;
-    
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 50px;
-    
-    color: #000000;
-    
-
-
-
 }
 
-.secondePage3thTextHead{
+.secondPageText__secondePage3thTextHead{
     position: absolute;
     width: 249px;
     height: 55px;
     left: 5%;
     top: 1527px;
-    
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 46px;
-    line-height: 55px;
-    
-    color: #000000;
-
 }
 
-.secondePage3thText{
+.secondPageText__secondePage3thText{
     position: absolute;
     width: 533px;
     height: 110px;
     left: 18.7%;
     top: 1527px;
-    
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 46px;
-    line-height: 55px;
-    
-    color: #000000;
-
 }
-.footer1{
+
+/*===================================================================================================================================================================*/
+
+.footer{
     position: absolute;
     width: 100% ;
     height: 141px;
