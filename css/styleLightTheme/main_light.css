@@ -12,7 +12,7 @@ body{
     position: fixed;
     width: 100%;
     height: 12%;
-    left: 0;
+
     top: 0;
     z-index: 1;
     border-radius: 0px 0px 30px 30px;
@@ -33,12 +33,8 @@ body{
     justify-content: flex-end;
     
 }
-.logoText{
-    position: absolute;
-    width: 226px;
-    height: 68px;
-    left: 17px;
-    top: 48px;
+.header__logoText{
+
 
     text-decoration: none;
     font-family: 'Open Sans';
@@ -47,27 +43,27 @@ body{
     font-size: 48px;
     line-height: 68px;
 
-    display: flex;
-    align-items: center;
-    text-align: center;
-
     color: #FFFFFF;
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.header__logo-group{
+    display: flex;
+
+    justify-content:start;
+
+    flex: 20px 20px 20px 20px;
+    padding: 20px 25px 0px 0px;
+}
+
 .header__logo{
-    position: absolute;
-    left: 17px;
-    top: 7px;
-    width: 70px;
-    height: 47px;
+
 }
 
 .header__Login{
     display: flex;
     justify-content: end;
     margin: 0px 30px 0px 0px;
-    flex: 0 0 100px;
+ 
     text-decoration: none;
 }
 .Login_text{
@@ -83,7 +79,7 @@ body{
 .header__menu{
     display: flex;
     justify-content: space-between;
-    margin: 0px 0px 0px 270px;
+    margin: 0px 0px 0px 220px;
     flex: 1 1 auto;
 }
 
@@ -109,15 +105,39 @@ ul{
     flex-wrap: wrap;
 }
 
-@media (max-width: 1183px){
+/* @media (max-width: 1503px){
+    .header{
+        height: 18%;
+    }
+} */
+@media(max-width: 1553px){
+   .header__menu{
+    margin: 0px 0px 0px 110px;
+   } 
+}
+
+@media(max-width: 1453px){
+    .header__menu{
+        margin: 0px 0px 0px 60px;
+       } 
+}
+
+
+@media (max-width: 1317px){
     .header{
         height: 18%;
     }
 }
-@media (max-width: 915px){
-    .header{
-        height: 24%;
-    }
+
+@media(max-width: 1048px){
+.header{
+    height: 24%;
+}
+}
+@media(max-width: 850px){
+    .header__menu{
+        margin: 0px 0px 0px 0px;
+       } 
 }
 
 /*===================================================================================================================================================================*/
@@ -130,7 +150,7 @@ ul{
     left: 60%;
     top: 20%;
 
-    background: url(walkator-klMii3cR9iI-unsplash.jpg);
+
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(-10px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 27px;
 }
@@ -189,6 +209,14 @@ ul{
     color: #AEAEAE;
 }
 
+@media(max-width:1400px){
+    .offer-img{
+    opacity: 0.5;
+    }
+}
+
+
+
 /*===================================================================================================================================================================*/
 /*Second page content*/
 
@@ -207,29 +235,57 @@ ul{
     line-height: 55px;
     
     color: #000000;
+    
 }
 
 
-
-.secondPageText__secondPage1stTtextHead{
-    margin: 0px 0px 0px 50px;
-    position: absolute;
-    width: 172px;
-    height: 55px;
-    left: 5%;
-    top: 1166px;
-    margin: 0px 120px 0px 0px;
-
-
-}
 .secondPageText__secondPage1stText{
     position: absolute;
     width: 569px;
     height: 100px;
-    left: 14%;
-    top: 1166px;
+    left: 5%;
+    top: 1216px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 35px;
+    
+    color: #000000;
 
 }
+
+.secondPageText__secondePage2ndText{
+    position: absolute;
+    width: 106px;
+    height: 55px;
+    left: 5%;
+    top: 1414px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 35px;
+    
+    color: #000000;
+    
+}
+
+.secondPageText__secondePage3thText{
+    position: absolute;
+    width: 249px;
+    height: 55px;
+    left: 5%;
+    top: 1497px;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 35px;
+    
+    color: #000000;
+}
+
 
 .secondPageFront{
     position: absolute;
@@ -237,7 +293,8 @@ ul{
     height: 537px;
     left: 50%;
     top: 1166px;
-
+    
+    background-image: url(img/2ndPageFront.png);
 
 }
 
@@ -249,39 +306,11 @@ ul{
 }
 
 
-.secondPageText__secondePage2ndTextHead{
-    position: absolute;
-    width: 106px;
-    height: 55px;
-    left: 5%;
-    top: 1354px;
-    
+@media(max-width:1400px){
+    .secondPageFront{
+    opacity: 0.5;
+    }
 }
-
-.secondPageText__secondePage2ndText{
-    position: absolute;
-    width: 656px;
-    height: 50px;
-    left: 11%;
-    top: 1357px;
-}
-
-.secondPageText__secondePage3thTextHead{
-    position: absolute;
-    width: 249px;
-    height: 55px;
-    left: 5%;
-    top: 1527px;
-}
-
-.secondPageText__secondePage3thText{
-    position: absolute;
-    width: 533px;
-    height: 110px;
-    left: 18.7%;
-    top: 1527px;
-}
-
 /*===================================================================================================================================================================*/
 
 .footer{
@@ -347,7 +376,7 @@ ul{
     position: absolute;
     width: 43px;
     height: 43px;
-    left: 592px;
+    left: 742px;
     top: 35px;
 
     background: url(image);
@@ -358,7 +387,7 @@ ul{
     position: absolute;
     width: 381px;
     height: 34px;
-    left: 637px;
+    left: 787px;
     top: 40px;
 
     font-family: 'Inter';
@@ -376,7 +405,7 @@ ul{
     position: absolute;
     width: 45px;
     height: 41px;
-    left: 592px;
+    left: 742px;
     top: 87px;
     
     background: url(image.png);
@@ -387,7 +416,7 @@ ul{
     position: absolute;
     width: 247px;
     height: 34px;
-    left: 641px;
+    left: 791px;
     top: 88px;
 
     font-family: 'Inter';
@@ -404,7 +433,7 @@ ul{
     position: absolute;
     width: 90px;
     height: 90px;
-    left: 1093px;
+    left: 1393px;
     top: 32px;
 
     background: url(image);
@@ -415,7 +444,7 @@ ul{
     position: absolute;
     width: 84.61px;
     height: 90px;
-    left: 1210px;
+    left: 1510px;
     top: 32px;
     
     background: url(image);
@@ -426,7 +455,7 @@ ul{
     position: absolute;
     width: 90px;
     height: 90px;
-    left: 1322px;
+    left: 1622px;
     top: 32px;
     
     background: url(image);
