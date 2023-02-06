@@ -1,119 +1,156 @@
 body{
-    background: #0F0F0F;
+    background: #000;
 }
-.nav{
+.header__container
+{
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 12%;
+
+    top: 0;
+    z-index: 1;
+    border-radius: 0px 0px 30px 30px;
+    background: #fff;   
+    text-decoration: none;
+    color: #000;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 1.5;
+
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.header__logoText{
+
+
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 68px;
+
+    color: #000;
+
+}
+.header__logo-group{
+    display: flex;
+
+    justify-content:start;
+
+    flex: 20px 20px 20px 20px;
+    padding: 20px 25px 0px 0px;
+}
+
+.header__logo{
+
+}
+
+.header__Login{
+    display: flex;
+    justify-content: end;
+    margin: 0px 30px 0px 0px;
+ 
+    text-decoration: none;
+}
+.Login_text{
+    color: #000;
+    text-decoration: none;
+}
+.Login_text:hover{
+    color: #AEAEAE;
+}
+
+
+
+.header__menu{
     display: flex;
     justify-content: space-between;
-}
-a{
-    display: flex;
-}
-.logo{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    display: flex;
-    background: #000000;
+    margin: 0px 0px 0px 220px;
+    flex: 1 1 auto;
 }
 
-.FirstHeader{
-    position: fixed;
-    width: 1440px;
-    height: 128px;
-    left: 0px;
-    top: 0px;
-    z-index: 100;
-    border-radius: 0px 0px 30px 0px;
-    background: #000000;
-
-    
-}
-.Compiler{
-    position: absolute;
-    width: 150px;
-    height: 89px;
-    left: 319px;
-    top: 25.72px;
-    
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 46px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-.Tasks{
-    position: absolute;
-    width: 97px;
-    height: 89px;
-    left: 596px;
-    top: 25.72px;
-    
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 46px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
-    
-}
-.Documentation{
-    position: absolute;
-    width: 262px;
-    height: 89px;
-    left: 820px;
-    top: 25.72px;
-    
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 46px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
-    
+ul{
+    list-style-type: none;
 }
 
-.Registration{
-    position: absolute;
-    width: 202px;
-    height: 89px;
-    left: 1187px;
-    top: 26px;
-    
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 46px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
+.menu__item:not(:last-child){
+    margin: 0px  120px 0px 0px;
 }
+
+.menu__link{
+    text-decoration: none;
+    color: #000;
+}
+.menu__link:hover{
+    color: #AEAEAE;
+}
+
+
+.menu__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* @media (max-width: 1503px){
+    .header{
+        height: 18%;
+    }
+} */
+@media(max-width: 1553px){
+   .header__menu{
+    margin: 0px 0px 0px 110px;
+   } 
+}
+
+@media(max-width: 1453px){
+    .header__menu{
+        margin: 0px 0px 0px 60px;
+       } 
+}
+
+
+@media (max-width: 1317px){
+    .header{
+        height: 18%;
+    }
+}
+
+@media(max-width: 1048px){
+.header{
+    height: 24%;
+}
+}
+@media(max-width: 850px){
+    .header__menu{
+        margin: 0px 0px 0px 0px;
+       } 
+}
+
+/*===================================================================================================================================================================*/
+/*First page content*/
 
 .offer-img{
     position: absolute;
     width: 590px;
     height: 835px;
-    left: 837px;
-    top: 160px;
+    left: 60%;
+    top: 20%;
 
-    background: url(walkator-klMii3cR9iI-unsplash.jpg);
+
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(-10px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 27px;
 }
@@ -122,8 +159,8 @@ a{
     position: absolute;
     width: 710px;
     height: 501px;
-    left: 73px;
-    top: 250px;
+    left: 15%;
+    top: 30%;
 
     font-family: 'Open Sans';
     font-style: normal;
@@ -137,26 +174,16 @@ a{
     color: #fff;
 }
 
-.fieldButton{
+    
+
+.button{
     box-sizing: border-box;
 
     position: absolute;
     width: 253px;
     height: 102px;
-    left: 302px;
+    left: 25%;
     top: 759px;
-    
-    background: #fff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 39px;
-}
-
-.textButton{
-    position: absolute;
-    width: 222px;
-    height: 68px;
-    left: 317px;
-    top: 776px;
     
     text-decoration: none;
     
@@ -164,40 +191,43 @@ a{
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
-    line-height: 68px;
+    line-height: 95px;
     
     /* identical to box height */
     
-    display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
     
     color: #000;
+    background: #fff;
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 39px;
+}
+.button:hover{
+    color: #AEAEAE;
 }
 
-.secondPageFront{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 577px;
-    height: 537px;
-    left: 863px;
-    top: 1140px;
-
-    background: url(image.png);
-    box-shadow: inset 10px -20px 52px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 118px;
+@media(max-width:1400px){
+    .offer-img{
+    opacity: 0.5;
+    }
 }
 
-.secondPage1stTtextHead{
-    position: absolute;
-    width: 172px;
-    height: 55px;
-    left: 73px;
-    top: 1166px;
-    
+
+
+/*===================================================================================================================================================================*/
+/*Second page content*/
+
+.SecondePage__secondPageText{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 0px 300px;
+    flex: 1 1 auto;
+}
+
+.secondPageText{
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
@@ -208,98 +238,92 @@ a{
     
 }
 
-.secondPage1stText{
+
+.secondPageText__secondPage1stText{
     position: absolute;
     width: 569px;
     height: 100px;
-    left: 245px;
-    top: 1166px;
-
+    left: 5%;
+    top: 1216px;
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
-    font-size: 42px;
-    line-height: 50px;
-
+    font-size: 46px;
+    line-height: 35px;
+    
     color: #fff;
+
 }
-.secondePage2ndTextHead{
+
+.secondPageText__secondePage2ndText{
     position: absolute;
     width: 106px;
     height: 55px;
-    left: 73px;
-    top: 1354px;
-    
+    left: 5%;
+    top: 1414px;
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
     font-size: 46px;
-    line-height: 55px;
-    
-    color: #fff;
-}
-
-.secondePage2ndText{
-    position: absolute;
-    width: 656px;
-    height: 50px;
-    left: 179px;
-    top: 1357px;
-    
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 50px;
+    line-height: 35px;
     
     color: #fff;
     
-
-
-
 }
 
-.secondePage3thTextHead{
+.secondPageText__secondePage3thText{
     position: absolute;
     width: 249px;
     height: 55px;
-    left: 73px;
-    top: 1527px;
-    
+    left: 5%;
+    top: 1497px;
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
     font-size: 46px;
-    line-height: 55px;
+    line-height: 35px;
     
     color: #fff;
-
 }
 
-.secondePage3thText{
+
+.secondPageFront{
     position: absolute;
-    width: 533px;
-    height: 110px;
-    left: 330px;
-    top: 1527px;
+    width: 577px;
+    height: 537px;
+    left: 50%;
+    top: 1166px;
     
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 46px;
-    line-height: 55px;
-    
-    color: #fff;
+    background-image: url(img/2ndPageFront.png);
 
 }
-.footer1{
+.secondPageFrontImg{
+    border-radius: 30px ;
+}
+
+.secondPageText > *:not(:last-child){
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px 0px 0px;
+    flex: 1 1 auto;
+}
+
+
+@media(max-width:1400px){
+    .secondPageFront{
+    opacity: 0.5;
+    }
+}
+/*===================================================================================================================================================================*/
+
+.footer{
     position: absolute;
-    width: 1440px;
+    width: 100% ;
     height: 141px;
     left: 0px;
     top: 1844px;
 
-    background: #000000;
+    background: #fff;
 }
 .switchTheme{
     position: absolute;
@@ -312,6 +336,7 @@ a{
     background: #D9D9D9;
     border-radius: 16px;
 }
+
 .aboutUs{
     position: absolute;
     width: 119px;
@@ -327,7 +352,7 @@ a{
     /* identical to box height */
     
     
-    color: #FFFFFF;
+    color: #000;
     
 }
 
@@ -346,7 +371,7 @@ a{
     /* identical to box height */
     
     
-    color: #FFFFFF;
+    color: #000;
 
 }
 
@@ -354,7 +379,7 @@ a{
     position: absolute;
     width: 43px;
     height: 43px;
-    left: 592px;
+    left: 742px;
     top: 35px;
 
     background: url(image);
@@ -365,7 +390,7 @@ a{
     position: absolute;
     width: 381px;
     height: 34px;
-    left: 637px;
+    left: 787px;
     top: 40px;
 
     font-family: 'Inter';
@@ -383,7 +408,7 @@ a{
     position: absolute;
     width: 45px;
     height: 41px;
-    left: 592px;
+    left: 742px;
     top: 87px;
     
     background: url(image.png);
@@ -394,7 +419,7 @@ a{
     position: absolute;
     width: 247px;
     height: 34px;
-    left: 641px;
+    left: 791px;
     top: 88px;
 
     font-family: 'Inter';
@@ -405,13 +430,13 @@ a{
     /* identical to box height */
 
 
-    color: #FFFFFF;
+    color: #000;
 }
 .vkImg{
     position: absolute;
     width: 90px;
     height: 90px;
-    left: 1093px;
+    left: 1393px;
     top: 32px;
 
     background: url(image);
@@ -422,7 +447,7 @@ a{
     position: absolute;
     width: 84.61px;
     height: 90px;
-    left: 1210px;
+    left: 1510px;
     top: 32px;
     
     background: url(image);
@@ -433,9 +458,15 @@ a{
     position: absolute;
     width: 90px;
     height: 90px;
-    left: 1322px;
+    left: 1622px;
     top: 32px;
     
     background: url(image);
     border-radius: 30px;
+}
+
+
+[class*="__container"]{
+    max-width: 1700px;
+    margin: 0px auto;
 }
