@@ -26,10 +26,6 @@ body{
     justify-content: space-between;
 }
 
-
-.header__logo{
-
-}
 .header__text{
     text-decoration: none;
     font-family: 'Open Sans';
@@ -62,7 +58,6 @@ body{
     font-weight: 500;
     font-size: 24px;
     line-height: 68px;
- 
 }
 
 main{
@@ -74,7 +69,7 @@ main{
     flex-direction: column;
 }    
 fieldset{
-    border: 0;
+    border: 10px;
 }
 form{
     justify-content: center;
@@ -93,7 +88,7 @@ form{
     padding: 32px;
 }
 
-.form__form1st{
+.form__form{
     margin-bottom: 140px; 
 }
 
@@ -111,25 +106,24 @@ form{
     color: #000;
 } 
 
-.form1st__input{
+.form__input{
     width: 300px;
     font-size:26px;
 
 }
 
-.form1st__group{
+.form__group{
     display: flex;
 
     flex-direction: row;
-
-    justify-content: center;    
+  
 }
 
-.form1st__group:not(:last-child){
+.form__group:not(:last-child){
     margin-bottom: 32px;
 }
 
-.form1st__label{
+.form__label{
     margin-right: 32px;
     width: 300px;
     
@@ -146,24 +140,24 @@ form{
 
 }
 
-.form2nd__group{
+.form__group{
     display: flex;
 
     flex-direction: row;
 }
 
-.form2nd__label{
+.form__label{
     justify-content: left;
     margin-right: 32px;
     width: 380px;
 }
 
-.form2nd__group:not(:last-child){
+.form__group:not(:last-child){
     margin-bottom: 32px;
 
 }
 
-.form2nd__input{
+.form__input{
     width: 300px;
     font-size:26px;
 }
