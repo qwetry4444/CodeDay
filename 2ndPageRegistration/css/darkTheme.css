@@ -3,7 +3,7 @@ body{
 }
 
 .header{
-
+    
 	display: flex;
 	flex-direction: column;
     width: 100%;
@@ -13,23 +13,16 @@ body{
     max-width: 1800px;
     position: flex;
 
-
     margin-bottom: 5px;
 }
-.container{
-    flex: 1 1 auto;
-}
+
 
 .header__row{
-
     display: flex;
     justify-content: space-between;
 }
 
 
-.header__logo{
-
-}
 .header__text{
     text-decoration: none;
     font-family: 'Open Sans';
@@ -78,8 +71,10 @@ fieldset{
 }
 form{
     justify-content: center;
-    width: 852px;
-    
+
+    margin-bottom: 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
     letter-spacing: 1px;
     color:#fff;
     font-family: 'Jura';
@@ -88,12 +83,22 @@ form{
     margin-bottom: 15px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.form__form-field{
+
+
+
+.form__1stform-field{
     border: 3px solid #fff;
     padding: 32px;
+    margin-bottom: 50px;
 }
 
-.form__form1st{
+.from_2ndform-field{
+    border: 3px solid #fff;
+    padding: 32px;
+    flex-direction: row;
+}
+
+.form__form{
     margin-bottom: 140px; 
 }
 
@@ -111,59 +116,53 @@ form{
     color: #fff;
 } 
 
-.form1st__input{
+.form__input{
     width: 300px;
     font-size:26px;
 
 }
 
-.form1st__group{
+.form__group{
     display: flex;
 
     flex-direction: row;
 
-    justify-content: center;    
+
 }
 
-.form1st__group:not(:last-child){
+.form__group:not(:last-child){
     margin-bottom: 32px;
 }
 
-.form1st__label{
-    margin-right: 32px;
+.form__label{
+    margin-right: 64px;
     width: 300px;
     
 }
 
 /* ===================================================================================================================================================================== */
 
-
-
-.form2nd{
-  
-    margin-bottom: 0px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
+fieldset{
+    margin-bottom: 40px;
 }
-
-.form2nd__group{
+.form__group{
     display: flex;
 
     flex-direction: row;
 }
 
-.form2nd__label{
+.form__label{
     justify-content: left;
     margin-right: 32px;
     width: 380px;
 }
 
-.form2nd__group:not(:last-child){
+.form__group:not(:last-child){
     margin-bottom: 32px;
 
 }
 
-.form2nd__input{
+.form__input{
     width: 300px;
     font-size:26px;
 }
@@ -212,7 +211,7 @@ form{
     height: 118px;
     left: 587px;
     top: 1415px;
-    color:#000;
+    color:#fff;
     font-family: 'Jura';
 }
 .end-group{
@@ -226,7 +225,6 @@ form{
 
     width: 266px;
     height: 118px;
-
 
 
     border-radius: 41px;
@@ -281,13 +279,13 @@ form{
 }
 
 .end-group__submit-button:hover{
-    background-color: #a1a1a1;
+    background-color: #3a3a3a;
 }
 .end-gorup__clear-button:hover{
-    background-color: #a1a1a1;
+    background-color: #3a3a3a;
 }
 .header__switchTheme:hover{
-    background-color: #a1a1a1;
+    background-color: #3a3a3a;
 }
 
 
@@ -323,10 +321,10 @@ form{
     .form{
         width: 700px;
     }
-    .form__form1st{
+    .form__form{
         width: 700px;
     }
-    .form__form2nd{
+    .form__form{
         width: 700px;
     }
     .end-group__submit-button{

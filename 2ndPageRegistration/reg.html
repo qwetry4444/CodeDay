@@ -30,73 +30,70 @@
 
 
     <main>
-
- 
         <h1 class="title">Registration</h1>
-        <fieldset>
-            <form action="#" class="form__form1st">
-                <div class="form__form-field">
-                    <div class="form1st__group">
-                        <label class="form1st__label">User name</label> <input type="text" class="form1st__input" required="Required field!">
+        <form action="#" class="form__form">
+            <fieldset>
+                <div class="form__1stform-field">
+                    <div class="form__group">
+                        <label class="form__label">User name</label> <input type="text" class="form__input" required >
                         </div>
-                        <div class="form1st__group">
-                            <label class="form1st__label">Password</label><input type="password" class="form1st__input" required="Required field!">
+                        <div class="form__group">
+                            <label class="form__label">Password</label><input type="password" class="form__input" required>
                         </div>
-                        <div class="form1st__group">
-                            <label class="form1st__label">Repeat password</label><input type="password" class="form1st__input" required="Required field!">
+                        <div class="form__group">
+                            <label class="form__label">Repeat password</label><input type="password" class="form__input" required>
                         </div>
                  </div>
-            </form>
-        </fieldset>
+          
         
-       
-        <fieldset class="">
-            <form action="#" class="form__form2nd">
-                <div class="form__form-field">
-                    <div class="form2nd__group">
-                        <label class="form2nd__label">Choose your gender</label>
-                        <div class="form2nd__gender_input">
-                            <label> <input type="radio" name="gender" value="Man" id="Man">Man</label>
-                            <label> <input type="radio" name="gender" value="Woman" id="Woman">Woman</label>
-                        </div>
+         
+            <div class="from_2ndform-field">
+                <div class="form__group">
+                    <label class="form__label">Choose your gender</label>
+                    <div class="form__gender_input">
+                        <label> <input type="radio" name="gender" value="Man" id="Man">Man</label>
+                        <label> <input type="radio" name="gender" value="Woman" id="Woman">Woman</label>
                     </div>
+                 </div>
         
         
-                    <div class="form2nd__group">
-                        <label class="form2nd__label">Choose your preferred <br/>programming language</label>
-                        <select name="PL" id="PlChoose" class="form2nd__PL_input">
-                            <option value="C">C</option>
-                            <option value="C++">C++</option>
-                            <option value="C#">C#</option>
-                            <option value="Python">Python</option>
-                            <option value="JavaScript">JavaScript</option>
-                        </select>
-                    </div>
-        
-                    <div class="form2nd__group">
-                        <label class="form2nd__label">Email</label>
-                        <input class="form2nd__input" type="email" pattern="*" required placeholder="myEmail@mail.ru">
-                    </div>
-                    <div class="form2nd__group">
-                        <label class="form2nd__label">Phone number</label>
-                        <input class="form2nd__input" type="text" required placeholder="7 982 52 25 285">
-                    </div>
-                    <div class="form2nd__group">
-                        <label class="form2nd__label">Birtday</label>
-                        <input class="form2nd__input" type="date" required placeholder="day.mounth.year" pattern="[0-9]{1,2}.[0-9]{1,2}.[0-9]{3,4}">
-                    </div>
+                <div class="form__group">
+                    <label class="form__label">Choose your preferred <br/>programming language</label>
+                    <select name="PL" id="PlChoose" class="form__PL_input">
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="C#">C#</option>
+                        <option value="Python">Python</option>
+                        <option value="JavaScript">JavaScript</option>
+                    </select>
                 </div>
+        
+                <div class="form__group">
+                    <label class="form__label">Email</label>
+                    <input class="form__input" type="email" pattern="*" required placeholder="myEmail@mail.ru">
+                </div>
+                <div class="form__group">
+                    <label class="form__label">Phone number</label>
+                    <input class="form__input" type="text" required placeholder="7 982 52 25 285">
+                </div>
+                <div class="form__group">
+                    <label class="form__label">Birtday</label>
+                    <input class="form__input" type="date" required placeholder="day.mounth.year" pattern="[0-9]{1,2}.[0-9]{1,2}.[0-9]{3,4}">
+                </div>
+            </div>
             
-                <div class="agree-group">
-                    <label class="agree-group__text">I agree to data processing</label>
-                    <input class="agree-group__buuton" type="checkbox">
-                </div>
-                <div class="end-group">
-                    <div class="end-group__submit-button"><input class="end-group__submit" type="submit" value="Sumbit"></div>
-                    <div class="end-gorup__clear-button"><input class="end-group__reset" type="reset" value="Clear"></div>
-                </div>
-                </form>
-        </fieldset>
+            <div class="agree-group">
+                <label class="agree-group__text">I agree to data processing</label>
+                <input class="agree-group__buuton" type="checkbox">
+            </div>
+            <div class="end-group">
+                <div class="end-group__submit-button"><input class="end-group__submit" type="submit" value="Sumbit"></div>
+                <div class="end-gorup__clear-button"><input class="end-group__reset" type="reset" value="Clear"></div>
+            </div>
+
+            
+            </fieldset>
+        </form>
     </main>
 
 
