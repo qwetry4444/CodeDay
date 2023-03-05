@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+</head>
+<style>
+.variant{
+    margin-bottom: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.zadanie1, .zadanie2{
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.madagascar, .principe{
+    position: relative;
+    background-color: #fff;
+    width: 300px;
+    height: 200px;
+    border: 2px solid #46fff6;
+
+    overflow: hidden;
+}
+.madagascar .line1{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(249,66,58);
+
+
+}
+.madagascar .line2{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(0,132,61);
+}
+.lines{
+    float:right
+}
+.name{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 200px;
+}
+
+.principe .line1{
+    position: relative;
+    height: 60px;
+    width: 300px;
+    background-color: rgb(0,150,57);
+}
+.principe .line2{
+    position: relative;
+    height: 80px;
+    width: 300px;
+    background-color: rgb(255,209,0);
+}
+.principe .line3{
+    position: relative;
+    height: 60px;
+    width: 300px;
+    background-color: rgb(0,150,57);
+
+}
+
+.principe::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    border: 100px solid transparent;
+    border-left: 75px solid #ef3340;
+    z-index: 1;
+}
+.star_container{
+    position:absolute;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    top: 10px;
+    left: 65px;
+    height: 60px;
+    width: 225px;
+}
+.star{
+    position:relative;
+    width: 65px;
+    aspect-ratio: 1;
+    z-index: 2;
+
+    background-color: black;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
+
+</style>
+<body>
+    <div class="variant">
+        <h2>Вариант 8</h2>
+    </div>
+    <div class="zadanie1">
+        <div class="madagascar">
+            <div class="lines">
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="name">
+        <p>Мадагаскар</p>
+    </div>
+
+    <div class="zadanie2">
+        <div class="principe">
+            <div class="line1"></div>
+            <div class="line2">
+                <div class="star_container">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+            </div>
+            <div class="line3"></div> 
+        </div>
+    </div>
+    <div class="name">
+        <p>Сан-Томе и Принсипи</p>
+    </div>
+
+</body>
+</html>
